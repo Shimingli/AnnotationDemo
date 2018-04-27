@@ -8,7 +8,7 @@ public class Testale {
     public void execute(){
         System.out.println("shiming execute");
     }
-    @Test
+    @Test//就好比一个注释
     void testExecute(){
         execute();
     }

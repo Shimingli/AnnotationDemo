@@ -1,5 +1,10 @@
 package annotation.shimihg.demo;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -53,5 +58,17 @@ public class MainActivity extends AppCompatActivity {
         integers.add(3);
         integers.add(4);
         UseCaseTracker.trackUseCases(integers,PasswordUtils.class);
+
+
+        AlarmManager am = (AlarmManager) getSystemService(Context.ALARM_SERVICE);
+
+        //Intent intent = new Intent(this, AlarmService.class
+        //intent.setAction(AlarmService.ACTION_ALARM);
+        //PendingIntent pendingIntent = PendingIntent.getService(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+        //if(Build.VERSION.SDK_INT < 19){
+        //    am.set(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 3000, pendingIntent);
+        //}else{
+        //    am.setExact(AlarmManager.RTC_WAKEUP, System.currentTimeMillis() + 3000, pendingIntent);
+        //}
     }
 }

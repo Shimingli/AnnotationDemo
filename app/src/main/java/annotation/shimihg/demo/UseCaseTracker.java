@@ -1,7 +1,6 @@
 package annotation.shimihg.demo;
 
 import android.annotation.SuppressLint;
-import android.util.FloatProperty;
 
 import java.lang.reflect.Method;
 import java.util.List;
