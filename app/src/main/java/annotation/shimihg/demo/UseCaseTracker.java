@@ -9,6 +9,8 @@ import java.util.List;
 /**
  * author： Created by shiming on 2018/4/27 15:16
  * mailbox：lamshiming@sina.com
+ *
+ * 如果没有用来读取注解的工具，那么注解也不会比注释更加有用
  */
 public class UseCaseTracker {
     @SuppressLint("UseValueOf")
